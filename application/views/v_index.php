@@ -1,5 +1,5 @@
 <section>
-            <h1><?php ech0 $judul ?></h1>
+            <h1><?php echo "judul" ?></h1>
             <p align='justify'>Pada pengertian codeigniter di atas tadi di jelaskan bawa codeigniter menggunakan metode MVC. Apa itu
                 MVC? Kita juga harus mengetaui apa itu MVC sebelum masuk dan lebih jauh dalam belajar codeigniter.</p>
             <p> MVC adalah teknik atau konsep yang memiisahkan komponen utama menjadi tiga komponen yaitu model, view, dan controller.</p>
