@@ -32,6 +32,6 @@ class Matakuliah extends CI_Controller
          
             $this->load->view('view-data-matakuliah', $data); 
         } 
-
+        
     }
 }
