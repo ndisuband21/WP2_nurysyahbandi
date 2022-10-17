@@ -72,3 +72,4 @@ class ModelBuku extends CI_Model
         $this->db->where($where);
         return $this->db->get();
     }
+}
