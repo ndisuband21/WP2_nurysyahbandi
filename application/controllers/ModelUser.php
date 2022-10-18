@@ -2,26 +2,26 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 class ModelUser extends CI_Model
 {
-    public function simpanData($data = null)
+    public function simpandata($data = null)
     {
     $this->db->insert('user', $data);
     }
-    public function cekData($where = null)
+    public function cekdata($where = null)
     {
     return $this->db->get_where('user', $where);
     }
-    public function getUserWhere($where = null)
+    public function getuserwhere($where = null)
     {
     return $this->db->get_where('user', $where);
     }
-    public function cekUserAccess($where = null)
+    public function cekuseraccess($where = null)
     {
     $this->db->select('*');
     $this->db->from('access_menu');
     $this->db->where($where);
     return $this->db->get();
     }
-    public function getUserLimit()
+    public function getuserlimit()
     {
         $this->db->select('*');
         $this->db->from('user');

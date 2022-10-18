@@ -1,29 +1,29 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class ModelBuku extends CI_Model
+class modelbuku extends CI_Model
 {
     //manajemen buku
-    public function getBuku()
+    public function getbuku()
     {
         return $this->db->get('buku');
     }
  
-    public function bukuWhere($where)
+    public function bukuwhere($where)
     {
         return $this->db->get_where('buku', $where);
     }
 
-    public function simpanBuku($data = null)
+    public function simpanbuku($data = null)
     {
         $this->db->insert('buku',$data);
     }
 
-    public function updateBuku($data = null, $where = null)
+    public function updatebuku($data = null, $where = null)
     {
         $this->db->update('buku', $data, $where);
     }
     
-    public function hapusBuku($where = null)
+    public function hapusbuku($where = null)
     {
         $this->db->delete('buku', $where);
     }
@@ -38,32 +38,32 @@ class ModelBuku extends CI_Model
     }
 
     //manajemen kategori
-    public function getKategori()
+    public function getkategori()
     {
         return $this->db->get('kategori');
     }
     
-    public function kategoriWhere($where)
+    public function kategoriwhere($where)
     {
         return $this->db->get_where('kategori', $where);
     }
 
-    public function simpanKategori($data = null)
+    public function simpankategori($data = null)
     {
         $this->db->insert('kategori', $data);
     }
 
-    public function hapusKategori($where = null)
+    public function hapuskategori($where = null)
     {
         $this->db->delete('kategori', $where);
     }
 
-    public function updateKategori($where = null, $data = null)
+    public function updatekategori($where = null, $data = null)
     {
         $this->db->update('kategori', $data, $where);
     }
     //join
-    public function joinKategoriBuku($where)
+    public function joinkategoribuku($where)
     {  
         $this->db->select('buku.id_kategori,kategori.kategori');
         $this->db->from('buku');
