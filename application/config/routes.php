@@ -52,3 +52,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Autentifikasi';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+<div class="
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"></div>
